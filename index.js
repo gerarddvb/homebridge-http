@@ -124,14 +124,14 @@ function HttpAccessory(log, config) {
 			// switch used to easily add additonal services
 			that.enableSet = false;
 			
-			switch (that.service) {
-				case "Switch":
-					if (that.switchService) {
-						that.switchService
-							.getCharacteristic(Characteristic.On)
-							.setValue(that.state);
-					}
-				break;
+		switch (that.service) {
+		case "Switch":
+			if (that.switchService) {
+			that.switchService
+			.getCharacteristic(Characteristic.On)
+			.setValue(that.state);
+			}
+		break;
                 case "Outlet":
                          if (that.OutletService) {
                          that.OutletService
@@ -145,49 +145,49 @@ function HttpAccessory(log, config) {
                          .getCharacteristic(Characteristic.On)
                          .setValue(that.state);
                          }
-                         break;
-				case "Light":
-					if (that.lightbulbService) {
-						that.lightbulbService
-							.getCharacteristic(Characteristic.On)
-							.setValue(that.state);
-					}
-				break;
-				case "Smoke":
-					if (that.smokeService) {
-						that.smokeService
-							.getCharacteristic(Characteristic.SmokeDetected)
-							.setValue(that.state);
-					}
-				break;
-				case "Motion":
-					if (that.motionService) {
-						that.motionService
-							.getCharacteristic(Characteristic.MotionDetected)
-							.setValue(that.state);
-					}
-				break;
-                         case "Leak":
+                break;
+		case "Light":
+			if (that.lightbulbService) {
+			that.lightbulbService
+			.getCharacteristic(Characteristic.On)
+			setValue(that.state);
+			}
+		break;
+		case "Smoke":
+			if (that.smokeService) {
+			that.smokeService
+			.getCharacteristic(Characteristic.SmokeDetected)
+			.setValue(that.state);
+			}
+		break;
+		case "Motion":
+			if (that.motionService) {
+			that.motionService
+			.getCharacteristic(Characteristic.MotionDetected)
+			.setValue(that.state);
+			}
+		break;
+                case "Leak":
                          if (that.leakService) {
                          that.leakService
                          .getCharacteristic(Characteristic.LeakDetected)
                          .setValue(that.state);
                          }
-                         break;
-                         case "CarbonDioxideSensor":
+                break;
+                case "CarbonDioxideSensor":
                          if (that.CarbonDioxideSensorService) {
                          that.CarbonDioxideSensorService
                          .getCharacteristic(Characteristic.CarbonDioxideDetected)
                          .setValue(that.state);
                          }
-                         break;
+                break;
                 case "ContactSensor":
                          if (that.ContactSensorService) {
                          that.ContactSensorService
                          .getCharacteristic(Characteristic.ContactSensorState)
                          .setValue(that.state);
                          }
-                         break;
+                break;
                 case "Faucet":
                          if (that.faucetService) {
                          that.faucetService
@@ -195,20 +195,20 @@ function HttpAccessory(log, config) {
                          .setValue(that.state);
                          }
                 break;
-                         case "IrrigationSystem":
+                case "IrrigationSystem":
                          if (that.IrrigationSystemService) {
                          that.IrrigationSystemService
                          .getCharacteristic(Characteristic.Active)
                          .setValue(that.state);
                          }
-                         break;
-                         case "Valve":
+                break;
+                case "Valve":
                          if (that.ValveService) {
                          that.ValveService
                          .getCharacteristic(Characteristic.Active)
                          .setValue(that.state);
                          }
-                         break;
+                break;
                 case "SecuritySystem":
                          if (that.SecuritySystemService) {
                          that.SecuritySystemService
@@ -223,20 +223,20 @@ function HttpAccessory(log, config) {
                          .setValue(that.state);
                          }
                 break;
-                         case "Speaker":
+                case "Speaker":
                          if (that.SpeakerService) {
                          that.SpeakerService
                          .getCharacteristic(Characteristic.Mute)
                          .setValue(that.state);
                          }
-                         break;
-				case "Occupancy":
-					if (that.occupancyService) {
-						that.occupancyService
-							.getCharacteristic(Characteristic.OccupancyDetected)
-							.setValue(that.state);
-					}
-				break;
+                break;
+		case "Occupancy":
+			if (that.occupancyService) {
+			that.occupancyService
+			.getCharacteristic(Characteristic.OccupancyDetected)
+			.setValue(that.state);
+			}
+		break;
 			}
 			
 			that.enableSet = true;
@@ -244,7 +244,7 @@ function HttpAccessory(log, config) {
 
 	}
 	
-	// Brightness Polling
+	// Brightness Polling [Will get removed soon]
 	if (this.brightnesslvl_url && this.brightnessHandling === "realtime") {
 		var brightnessurl = this.brightnesslvl_url;
 		
@@ -274,7 +274,7 @@ function HttpAccessory(log, config) {
 		});
 	}
 	
-	// Hue Polling
+	// Hue Polling [Will get removed soon]
 	if (this.hue_url && this.colorHandling === "realtime") {
 		var hueurl = this.hue_url;
 		var levelemitter = pollingtoevent(function(done) {
@@ -300,7 +300,7 @@ function HttpAccessory(log, config) {
 		});
 	}
 
-	// Saturation Polling
+	// Saturation Polling [Will get removed soon]
 	if (this.saturation_url && this.colorHandling === "realtime") {
 		var saturationurl = this.saturation_url;
 		var levelemitter = pollingtoevent(function(done) {
@@ -435,7 +435,7 @@ HttpAccessory.prototype = {
 	},
 
 
-	// for light (brightness, hue, saturation)
+	// for light (brightness, hue, saturation) Will get removed soon
 	getBrightness: function(callback) {
 		if (!this.brightnesslvl_url) {
 			this.log.warn("Ignoring request; No brightness level url defined.");
@@ -696,7 +696,7 @@ HttpAccessory.prototype = {
 					break;
 				}
 				
-				// Brightness Polling
+				// Brightness Polling, ending soon
 				switch (this.brightnessHandling) {
 					case "yes":
 						this.lightbulbService
@@ -739,23 +739,24 @@ HttpAccessory.prototype = {
 				return [informationService, this.lightbulbService];
 			break;
 				
-			case "Smoke":
-				this.smokeService = new Service.SmokeSensor(this.name);
-				this.switchHandling === "realtime";
-				this.smokeService
-					.getCharacteristic(Characteristic.SmokeDetected)
-					.on('get', function(callback) {callback(null, that.state)});
-				return [this.smokeService];
-			break;
+	// Other Services		
+	   case "Smoke":
+		this.smokeService = new Service.SmokeSensor(this.name);
+		this.switchHandling === "realtime";
+		this.smokeService
+		.getCharacteristic(Characteristic.SmokeDetected)
+		.on('get', function(callback) {callback(null, that.state)});
+		return [this.smokeService];
+		break;
 				
-			case "Motion":
-				this.motionService = new Service.MotionSensor(this.name);
-				this.switchHandling === "realtime";				
-				this.motionService
-					.getCharacteristic(Characteristic.MotionDetected)
-					.on('get', function(callback) {callback(null, that.state)});
-				return [this.motionService];
-			break;
+	   case "Motion":
+		this.motionService = new Service.MotionSensor(this.name);
+		this.switchHandling === "realtime";				
+		this.motionService
+		.getCharacteristic(Characteristic.MotionDetected)
+		.on('get', function(callback) {callback(null, that.state)});
+		return [this.motionService];
+		break;
                 
             case "CarbonDioxideSensor":
                 this.CarbonDioxideSensorService = new Service.CarbonDioxideSensor(this.name);
@@ -829,25 +830,26 @@ HttpAccessory.prototype = {
                 return [this.SecuritySystemService];
                 break;
                 
-			case "Occupancy":
-				this.occupancyService = new Service.OccupancySensor(this.name);
-				this.switchHandling === "realtime";                
-				this.occupancyService
-					.getCharacteristic(Characteristic.OccupancyDetected)
-					.on('get', function(callback) {callback(null, that.state)});
-				return [this.occupancyService];
-			break;
+	    case "Occupancy":
+		this.occupancyService = new Service.OccupancySensor(this.name);
+		this.switchHandling === "realtime";                
+		this.occupancyService
+		.getCharacteristic(Characteristic.OccupancyDetected)
+		.on('get', function(callback) {callback(null, that.state)});
+		return [this.occupancyService];
+		break;
 				
-			case "Leak":
-				this.leakService = new Service.LeakSensor(this.name);
-				this.switchHandling === "realtime";                
-				this.leakService
-					.getCharacteristic(Characteristic.LeakDetected)
-					.on('get', function(callback) {callback(null, that.state)});
-				return [this.leakService];
-			break;
-				
-			case "StatelessProgrammableSwitch":
+	    case "Leak":
+		this.leakService = new Service.LeakSensor(this.name);
+		this.switchHandling === "realtime";                
+		this.leakService
+		.getCharacteristic(Characteristic.LeakDetected)
+		.on('get', function(callback) {callback(null, that.state)});
+		return [this.leakService];
+		break;
+		
+	// This will die soon				
+	    case "StatelessProgrammableSwitch":
 				this.statelessProgrammableSwitchService = new Service.StatelessProgrammableSwitch(this.name);
 				/*this.switchHandling === "realtime";                
 				this.statelessProgrammableSwitchService
