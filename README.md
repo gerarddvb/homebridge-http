@@ -44,4 +44,4 @@ This fork is intented for usage on raspberry pi with webiopi.
 
 
 
-<img src="https://i.imgur.com/nMSQTnS.jpg" width="177" height="315"> <img src="https://i.imgur.com/0Ro5uXC.jpg" width="177" height="315">
+<img src="https://i.imgur.com/nMSQTnS.jpg" width="177" height="315"> <img src="https://i.imgur.com/0Ro5uXC.jpg" width="177" height="315"> <img src="https://i.imgur.com/W4zdT52.jpg" width="177" height="315">
