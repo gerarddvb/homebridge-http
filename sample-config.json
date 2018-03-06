@@ -1,0 +1,207 @@
+{
+	"bridge": {
+		"name": "HomeBridge",
+		"username": "CC:22:3D:E3:CE:30",
+		"port": 51826,
+		"pin": "xxx-xx-xxx"
+	},
+
+	"accessories": [
+                    {
+                    "accessory": "Http",
+                    "name": "Motion",
+                    "service": "Motion",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Occupancy",
+                    "service": "Occupancy",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Valve",
+                    "service": "Valve",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Leak",
+                    "service": "Leak",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/27/value/1",
+                    "off_url":     "http://localhost/GPIO/27/value/0",
+                    "status_url":  "http://localhost/GPIO/27/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Faucet",
+                    "service": "Faucet",
+                    "switchHandling": "yes",
+                    "http_method": "POST",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Smoke",
+                    "service": "Smoke",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Switch",
+                    "service": "Switch",
+                    "switchHandling": "yes",
+                    "http_method": "POST",
+                    "on_url":      "http://localhost/GPIO/4/value/1",
+                    "off_url":     "http://localhost/GPIO/4/value/0",
+                    "status_url":  "http://localhost/GPIO/4/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Light",
+                    "service": "Light",
+                    "switchHandling": "yes",
+                    "http_method": "POST",
+                    "on_url":      "http://localhost/GPIO/4/value/1",
+                    "off_url":     "http://localhost/GPIO/4/value/0",
+                    "status_url":  "http://localhost/GPIO/4/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Doorbell",
+                    "service": "Doorbell",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "IrrigationSystem",
+                    "service": "IrrigationSystem",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "CarbonDioxideSensor",
+                    "service": "CarbonDioxideSensor",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "ContactSensor",
+                    "service": "ContactSensor",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Fan",
+                    "service": "Fan",
+                    "switchHandling": "yes",
+                    "http_method": "POST",
+                    "on_url":      "http://localhost/GPIO/4/value/1",
+                    "off_url":     "http://localhost/GPIO/4/value/0",
+                    "status_url":  "http://localhost/GPIO/4/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "SecuritySystem",
+                    "service": "SecuritySystem",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Speaker",
+                    "service": "Speaker",
+                    "switchHandling": "realtime",
+                    "http_method": "GET",
+                    "on_url":      "http://localhost/GPIO/22/value/1",
+                    "off_url":     "http://localhost/GPIO/22/value/0",
+                    "status_url":  "http://localhost/GPIO/22/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    },
+                    {
+                    "accessory": "Http",
+                    "name": "Outlet",
+                    "service": "Outlet",
+                    "switchHandling": "yes",
+                    "http_method": "POST",
+                    "on_url":      "http://localhost/GPIO/4/value/1",
+                    "off_url":     "http://localhost/GPIO/4/value/0",
+                    "status_url":  "http://localhost/GPIO/4/value",
+                    "username" : "webiopi",
+                    "password" : "xxxxxxxx"
+                    }
+                    ],
+    "platforms": [
+    
+                  ]
+    
+}
