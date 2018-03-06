@@ -15,20 +15,20 @@ This fork is intented for usage on raspberry pi with webiopi.
 
 - Carbondioxine Sensor
 - Contact Sensor
-- Doorbell (Incompatible in iOS 11 Home App)
+- Doorbell (Incompatible with default iOS 11 Home App)
 - Fan
-- Faucet (Not working)
-- Irrigation System (Not working)
-- Leakkage Sensor
+- Faucet
+- Irrigation System
+- Leakage Sensor
 - Light
 - Motion Sensor
 - Occupancy Sensor
 - Outlet
-- Security System (Incompatible in iOS 11 Home App)
+- Security System
 - Smoke Sensor
-- Speaker (Incompatible in iOS 11 Home App) 
+- Speaker (Incompatible with default iOS 11 Home App)
 - Switch
-- Valve (Incompatible in iOS 11 Home App)
+- Valve 
 
 # Sources
 
