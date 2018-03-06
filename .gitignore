@@ -5,6 +5,7 @@
 .project
 .npmignore
 .jshintrc
+.dvb
 
 *.orig
 node_modules/*
