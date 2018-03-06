@@ -1,6 +1,6 @@
 {
   "name": "homebridge-http",
-  "version": "0.0.9",
+  "version": "0.0.10g",
   "description": "http(s) plugin for Homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
@@ -14,12 +14,13 @@
     "name": "Adrian Rudman"
   },
   "contributors":[
+  { "name" : "GerardDVB"},	  
   { "name" : "NovaGL"},
   { "name" : "David Parry"}
   ], 
   "repository": {
     "type": "git",
-    "url": "git://github.com/rudders/homebridge-http.git"
+    "url": "git://github.com/gerarddvb/homebridge-http.git"
   },
   "dependencies": {
     "request": "^2.65.0",
