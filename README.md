@@ -19,13 +19,13 @@ This fork is for usage on raspberry pi and webiopi.
 - Fan
 - Faucet (Not working)
 - Irrigation System (Not working)
-Leakkage Sensor
-Light
-Motion Sensor
-Occupancy Sensor
-Outlet
-Security System (Incompatible in iOS 11 Home App)
-Smoke Sensor
-Speaker (Incompatible in iOS 11 Home App) 
-Switch
-Valve (Incompatible in iOS 11 Home App)
+- Leakkage Sensor
+- Light
+- Motion Sensor
+- Occupancy Sensor
+- Outlet
+- Security System (Incompatible in iOS 11 Home App)
+- Smoke Sensor
+- Speaker (Incompatible in iOS 11 Home App) 
+- Switch
+- Valve (Incompatible in iOS 11 Home App)
