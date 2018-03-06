@@ -1,8 +1,8 @@
 # homebridge-http
 
-Supports https devices on the HomeBridge Platform and provides a readable callback for getting the "On" and "Active" characteristics to Homekit. 
+Supports https devices on the HomeBridge Platform and provides a readable callback for getting the "On" characteristics to Homekit. 
 
-This fork is for usage on raspberry pi and webiopi.
+This fork is intented for usage on raspberry pi with webiopi.
 
 # Installation
 
@@ -29,3 +29,13 @@ This fork is for usage on raspberry pi and webiopi.
 - Speaker (Incompatible in iOS 11 Home App) 
 - Switch
 - Valve (Incompatible in iOS 11 Home App)
+
+# Sources
+
+> https://github.com/nfarina/homebridge
+> https://github.com/rudders/homebridge-http
+> https://github.com/PeterBrain/homebridge-http
+> https://github.com/KhaosT/HAP-NodeJS/blob/master/lib/gen/HomeKitTypes.js
+> http://webiopi.trouch.com/INSTALL.html
+
+<img src="https://i.imgur.com/nMSQTnS.jpg" width="177" height="315"> <img src="https://i.imgur.com/0Ro5uXC.jpg" width="177" height="315">
