@@ -7,7 +7,7 @@ This fork is for usage on raspberry pi and webiopi.
 # Installation
 
 1. Install homebridge using: npm install -g homebridge
-2. Download this homebridge-http using: git clone https://github.com/gerarddvb/homebridge-http /home/pi/HomeKit/http/
+2. Download using: git clone https://github.com/gerarddvb/homebridge-http /home/pi/HomeKit/http/
 3. Install using: sudo npm install -g /home/pi/HomeKit/http/
 4. Update your configuration file. See sample-config.json in this repository for a sample. 
 
