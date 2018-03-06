@@ -13,17 +13,12 @@ This fork is for usage on raspberry pi and webiopi.
 
 # Supported devices
 
-Carbondioxine Sensor
-
-Contact Sensor
-
-Doorbell (Incompatible in iOS 11 Home App)
-
-Fan
-
-Faucet (Not working)
-
-Irrigation System (Not working)
+- Carbondioxine Sensor
+- Contact Sensor
+- Doorbell (Incompatible in iOS 11 Home App)
+- Fan
+- Faucet (Not working)
+- Irrigation System (Not working)
 Leakkage Sensor
 Light
 Motion Sensor
