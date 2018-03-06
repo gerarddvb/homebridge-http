@@ -33,9 +33,15 @@ This fork is intented for usage on raspberry pi with webiopi.
 # Sources
 
 > https://github.com/nfarina/homebridge
+
 > https://github.com/rudders/homebridge-http
+
 > https://github.com/PeterBrain/homebridge-http
+
 > https://github.com/KhaosT/HAP-NodeJS/blob/master/lib/gen/HomeKitTypes.js
+
 > http://webiopi.trouch.com/INSTALL.html
+
+
 
 <img src="https://i.imgur.com/nMSQTnS.jpg" width="177" height="315"> <img src="https://i.imgur.com/0Ro5uXC.jpg" width="177" height="315">
